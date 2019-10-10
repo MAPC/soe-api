@@ -2,7 +2,7 @@
 lock "~> 3.11.2"
 
 set :application, "soe-api"
-set :repo_url, "git@github.com:smithWEBtek/soe-api.git"
+set :repo_url, "git@github.com:MAPC/soe-api.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
