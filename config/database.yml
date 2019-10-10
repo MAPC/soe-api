@@ -84,6 +84,16 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+staging:
+  <<: *default
+  database: soe-api_staging
+  username: soe-api
+  password: <%= ENV['SOE-API_DATABASE_PASSWORD'] %>
+  adapter:            postgis
+  host:               localhost
+  schema_search_path: public
+  port: 5433
+
 production:
   <<: *default
   database: soe-api_production
