@@ -87,8 +87,6 @@ test:
 staging:
   <<: *default
   database: soe-api_staging
-  username: soe-api
-  password: <%= ENV['SOE-API_DATABASE_PASSWORD'] %>
   adapter:            postgis
   host:               localhost
   schema_search_path: public
