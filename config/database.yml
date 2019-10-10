@@ -92,3 +92,5 @@ production:
   adapter:            postgis
   host:               localhost
   schema_search_path: public
+  port: 5433
+  host:               18.204.196.47
