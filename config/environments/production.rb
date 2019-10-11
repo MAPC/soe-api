@@ -85,6 +85,6 @@ Rails.application.configure do
 end
 
 Rails.application.routes.default_url_options = {
-  host: 'soe-api.mapc.org',
+  host: 'staging.smithwebtek.com',
   protocol: 'https'
 }
