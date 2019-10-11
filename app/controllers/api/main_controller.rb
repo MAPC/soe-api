@@ -95,6 +95,10 @@ class Api::MainController < ApplicationController
   require_relative '../../data/seniors/seniors6'
   include Seniors6
 
+  def home
+    render 'home.html'
+  end
+
   def main
     case
     when params['q'] == "SELECT muni_id,nhwhi_00p,nhwhi_10p,nhwh_pdif,nhaa_pdif,lat_pdif,nhas_pdif,municipal FROM demo_pop_race_00_10m"

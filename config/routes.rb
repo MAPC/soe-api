@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   resources :demo_pop_race_00_10ms
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root 'api/main#main'
+  # root 'api/main#main'
+  root 'api/main#home'
 
   namespace :api do
     get '/', to: 'main#main'
