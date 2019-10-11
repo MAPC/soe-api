@@ -25,14 +25,14 @@ development:
   <<: *default
   database: soe-api_development
   adapter:            postgis
-  host:               host
+  host:               localhost
   schema_search_path: public
 
 staging:
   <<: *default
   database: soe-api_staging
   adapter:            postgis
-  host:               host
+  host:               localhost
   schema_search_path: public
 
   # The specified database role being used to connect to postgres.
@@ -69,7 +69,7 @@ test:
   <<: *default
   database: soe-api_test
   adapter:            postgis
-  host:               host
+  host:               localhost
   schema_search_path: public
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -98,6 +98,6 @@ production:
   username: soe-api
   password: <%= ENV['SOE-API_DATABASE_PASSWORD'] %>
   adapter:            postgis
-  host:               host
+  host:               localhost
   schema_search_path: public
   port: 5433
