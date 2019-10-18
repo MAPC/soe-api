@@ -85,6 +85,6 @@ Rails.application.configure do
 end
 
 Rails.application.routes.default_url_options = {
-  host: 'localhost',
+  host: 'soe-api.mapc.org',
   protocol: 'https'
 }
