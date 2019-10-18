@@ -94,7 +94,7 @@ test:
 
 production:
   <<: *default
-  database: soe-api
+  database: soe-api_production
   port: 5433
   username: soe-api
   adapter:            postgis
